@@ -15,5 +15,6 @@ class Acess(models.Model):
     name=models.ForeignKey(Webpage,on_delete=models.CASCADE)
     date=models.DateField()
     author=models.CharField(max_length=100)
+    email=models.CharField(default='dvs@gmail.com',max_length=100)
     def __str__(self):
         return self.author

@@ -19,7 +19,8 @@ from django.urls import path
 from app.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('d_Topic/',d_Topic,name='d_Topic'),
-    path('d_Web/',d_Web,name='d_Web'),
-    path('d_Acess/',d_Acess,name='d_Acess'),
+    path('display_topic/',display_topic,name='display_topic'),
+    path('display_web',display_web,name='display_web.'),
+   
+    
 ]
